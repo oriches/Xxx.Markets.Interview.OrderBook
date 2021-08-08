@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <StartupObject></StartupObject>
+    <AssemblyName>Xxx.Markets.Interview.OrderBook</AssemblyName>
+    <RootNamespace>Xxx.Markets.Interview.OrderBook</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_NCrunch_OrderBookTest\**" />
+    <EmbeddedResource Remove="_NCrunch_OrderBookTest\**" />
+    <None Remove="_NCrunch_OrderBookTest\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="OrderBookTest.v3.ncrunchproject" />
+    <None Remove="OrderBookTest.v3.ncrunchsolution" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
