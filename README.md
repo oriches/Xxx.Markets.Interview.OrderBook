@@ -14,7 +14,7 @@ Simply because it was a 'warmup' from my point of view, and to be honest I'm gla
 
 _Why make it available to anyone else?_
 
-Simply because I don't like being 'ghosted', it's not very professional.Also, may be help someone in the future :)
+Simply because I don't like being 'ghosted', it's not very professional. Also, may be help someone in the future :)
 
 Code Structure:
 
