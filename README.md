@@ -1,6 +1,6 @@
 # XXX Markets Interview Coding Test - OrderBook
 
-[![Build status](https://ci.appveyor.com/api/projects/status/u1vy7mjnw1rpidsg?svg=true)](https://ci.appveyor.com/project/oriches/xxx-markets-interview-orderbook)
+[![Build status](https://ci.appveyor.com/api/projects/status/j2j5dmerila9cpcj?svg=true)](https://ci.appveyor.com/project/oriches/xxx-markets-interview-orderbook)
 
 Built with .NET 5.0.
 
