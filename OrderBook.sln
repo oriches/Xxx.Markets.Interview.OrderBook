@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xxx.Markets.Interview.OrderBook", "OrderBook\Xxx.Markets.Interview.OrderBook.csproj", "{578585B6-F5B5-464D-891D-F1262CB14FEA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xxx.Markets.Interview.OrderBook.Tests", "OrderBook.Tests\Xxx.Markets.Interview.OrderBook.Tests.csproj", "{3996857B-9EF9-442A-BDE6-CA9FA84F06B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB907E5E-D0B7-4F56-A56E-BA94AE04D650}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

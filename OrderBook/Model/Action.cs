@@ -1,9 +1,8 @@
-﻿namespace Xxx.Markets.Interview.OrderBook.Model
+﻿namespace Xxx.Markets.Interview.OrderBook.Model;
+
+public enum Action
 {
-    public enum Action
-    {
-        Add = 0,
-        Remove,
-        Edit
-    }
+    Add = 0,
+    Remove,
+    Edit
 }

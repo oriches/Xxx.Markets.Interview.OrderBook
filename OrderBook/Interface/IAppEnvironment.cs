@@ -1,7 +1,6 @@
-﻿namespace Xxx.Markets.Interview.OrderBook.Interface
+﻿namespace Xxx.Markets.Interview.OrderBook.Interface;
+
+public interface IAppEnvironment
 {
-    public interface IAppEnvironment
-    {
-        void Run();
-    }
+    void Run();
 }

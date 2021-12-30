@@ -1,25 +1,24 @@
 ﻿using System;
 using System.Reactive.Disposables;
 
-namespace Xxx.Markets.Interview.OrderBook.Consumer
+namespace Xxx.Markets.Interview.OrderBook.Consumer;
+
+public abstract class DisposableObject : IDisposable
 {
-    public abstract class DisposableObject : IDisposable
+    private readonly CompositeDisposable _disposable;
+
+    protected DisposableObject()
     {
-        private readonly CompositeDisposable _disposable;
+        _disposable = new CompositeDisposable();
+    }
 
-        protected DisposableObject()
-        {
-            _disposable = new CompositeDisposable();
-        }
+    public void Dispose()
+    {
+        _disposable.Dispose();
+    }
 
-        public void Dispose()
-        {
-            _disposable.Dispose();
-        }
-
-        public static implicit operator CompositeDisposable(DisposableObject disposableObject)
-        {
-            return disposableObject._disposable;
-        }
+    public static implicit operator CompositeDisposable(DisposableObject disposableObject)
+    {
+        return disposableObject._disposable;
     }
 }

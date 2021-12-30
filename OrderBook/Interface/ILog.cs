@@ -1,7 +1,6 @@
-﻿namespace Xxx.Markets.Interview.OrderBook.Interface
+﻿namespace Xxx.Markets.Interview.OrderBook.Interface;
+
+public interface ILog
 {
-    public interface ILog
-    {
-        void Log(string message);
-    }
+    void Log(string message);
 }
