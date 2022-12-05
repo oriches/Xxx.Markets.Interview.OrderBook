@@ -1,11 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
 
     <OutputType>Library</OutputType>
+
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
