@@ -1,28 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
+		<IsPackable>false</IsPackable>
+		<OutputType>Library</OutputType>
+		<Nullable>disable</Nullable>
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
 
-    <IsPackable>false</IsPackable>
+	<ItemGroup>
+		<None Remove="OrderBookTest.Tests.v3.ncrunchproject" />
+	</ItemGroup>
 
-    <OutputType>Library</OutputType>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
+		<PackageReference Include="Microsoft.Reactive.Testing" Version="5.0.0" />
+		<PackageReference Include="NUnit" Version="3.13.3" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
+	</ItemGroup>
 
-    <Nullable>disable</Nullable>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="OrderBookTest.Tests.v3.ncrunchproject" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
-    <PackageReference Include="Microsoft.Reactive.Testing" Version="5.0.0" />
-    <PackageReference Include="NUnit" Version="3.13.3" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Xxx.Markets.Interview.OrderBook\Xxx.Markets.Interview.OrderBook.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Xxx.Markets.Interview.OrderBook\Xxx.Markets.Interview.OrderBook.csproj" />
+	</ItemGroup>
 
 </Project>
