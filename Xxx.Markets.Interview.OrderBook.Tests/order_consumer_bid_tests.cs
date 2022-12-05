@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.Reactive.Testing;
 using NUnit.Framework;
+using Xxx.Markets.Interview.OrderBook.Consumer;
+using Xxx.Markets.Interview.OrderBook.Model;
 using Xxx.Markets.Interview.OrderBook.Tests.Extensions;
 using Action = Xxx.Markets.Interview.OrderBook.Model.Action;
 
@@ -119,7 +122,7 @@ public sealed class order_consumer_bid_tests
         var consumer = new OrderConsumer(_scheduler);
 
         var bid1 = new OrderActionEventArgs(Action.Add, new Order(1, "SYMBOL_1", true, 100, 1000));
-        var bid2 = new OrderActionEventArgs(Delegate.Remove, new Order(1, null, false, 0, 0));
+        var bid2 = new OrderActionEventArgs(Action.Remove, new Order(1, null, false, 0, 0));
 
         consumer.StartProcessing(this, _startEventArgs);
 
@@ -332,7 +335,7 @@ public sealed class order_consumer_bid_tests
 
         var bid1 = new OrderActionEventArgs(Action.Add, new Order(1, "SYMBOL_1", true, 100, 1000));
         var bid2 = new OrderActionEventArgs(Action.Add, new Order(2, "SYMBOL_1", true, 110, 2000));
-        var bid3 = new OrderActionEventArgs(Delegate.Remove, new Order(1, null, false, 0, 0));
+        var bid3 = new OrderActionEventArgs(Action.Remove, new Order(1, null, false, 0, 0));
 
         consumer.StartProcessing(this, _startEventArgs);
 
@@ -477,7 +480,7 @@ public sealed class order_consumer_bid_tests
 
         var bid1 = new OrderActionEventArgs(Action.Add, new Order(1, "SYMBOL_1", true, 100, 1000));
         var bid2 = new OrderActionEventArgs(Action.Add, new Order(2, "SYMBOL_1", true, 100, 2000));
-        var bid3 = new OrderActionEventArgs(Delegate.Remove, new Order(2, null, false, 0, 0));
+        var bid3 = new OrderActionEventArgs(Action.Remove, new Order(2, null, false, 0, 0));
 
         consumer.StartProcessing(this, _startEventArgs);
 
