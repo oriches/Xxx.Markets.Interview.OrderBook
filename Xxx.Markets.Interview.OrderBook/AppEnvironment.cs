@@ -42,20 +42,11 @@ public class AppEnvironment : IAppEnvironment
         foreach (var command in commands) OnOrderAction(new OrderActionEventArgs(command.Action, command.Order));
     }
 
-    private void OnProcessingStart(ProcessingStartEventArgs args)
-    {
-        ProcessingStartEvent?.Invoke(this, args);
-    }
+    private void OnProcessingStart(ProcessingStartEventArgs args) => ProcessingStartEvent?.Invoke(this, args);
 
-    private void OnProcessingFinish()
-    {
-        ProcessingFinishEvent?.Invoke(this, EventArgs.Empty);
-    }
+    private void OnProcessingFinish() => ProcessingFinishEvent?.Invoke(this, EventArgs.Empty);
 
-    private void OnOrderAction(OrderActionEventArgs args)
-    {
-        OrderActionEvent?.Invoke(this, args);
-    }
+    private void OnOrderAction(OrderActionEventArgs args) => OrderActionEvent?.Invoke(this, args);
 
     public class Command
     {

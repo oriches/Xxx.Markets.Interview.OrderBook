@@ -79,15 +79,9 @@ public sealed class OrderConsumer : DisposableObject, IOrderConsumer
 
     public IReadOnlyCollection<OrderBook> OrderBooks { get; private set; }
 
-    public void StartProcessing(object sender, ProcessingStartEventArgs args)
-    {
-        _start.OnNext(args.Log);
-    }
+    public void StartProcessing(object sender, ProcessingStartEventArgs args) => _start.OnNext(args.Log);
 
-    public void HandleOrderAction(object sender, OrderActionEventArgs args)
-    {
-        _orders.OnNext(args);
-    }
+    public void HandleOrderAction(object sender, OrderActionEventArgs args) => _orders.OnNext(args);
 
     public void FinishProcessing(object sender, EventArgs args)
     {

@@ -5,8 +5,5 @@ namespace Xxx.Markets.Interview.OrderBook.Consumer;
 
 public sealed class ConsoleLogger : ILog
 {
-    public void Log(string message)
-    {
-        Console.WriteLine(message?.Trim());
-    }
+    public void Log(string message) => Console.WriteLine(message?.Trim());
 }
